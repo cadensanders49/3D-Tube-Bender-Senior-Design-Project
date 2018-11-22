@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{28293533-8CC7-4728-BF48-639FED790383}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>_3DTubeBender</RootNamespace>
+    <AssemblyName>3DTubeBender</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bytecode">
+      <HintPath>..\..\..\..\..\..\..\source\repos\cadensanders49\3D-Tube-Bender\Maestro\UscCmd\bin\Debug\Bytecode.dll</HintPath>
+    </Reference>
+    <Reference Include="Jrk">
+      <HintPath>..\..\..\..\..\..\..\source\repos\cadensanders49\3D-Tube-Bender\Jrk\Jrk\bin\Debug\Jrk.dll</HintPath>
+    </Reference>
+    <Reference Include="Sequencer">
+      <HintPath>..\..\..\..\..\..\..\source\repos\cadensanders49\3D-Tube-Bender\Maestro\UscCmd\bin\Debug\Sequencer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UsbWrapper">
+      <HintPath>..\..\..\..\..\..\..\source\repos\cadensanders49\3D-Tube-Bender\Maestro\UscCmd\bin\Debug\UsbWrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Usc">
+      <HintPath>..\..\..\..\..\..\..\source\repos\cadensanders49\3D-Tube-Bender\Maestro\UscCmd\bin\Debug\Usc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bend.Designer.cs">
+      <DependentUpon>Bend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BendOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BendOptions.Designer.cs">
+      <DependentUpon>BendOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Config.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Config.Designer.cs">
+      <DependentUpon>Config.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PasswordRequest.Designer.cs">
+      <DependentUpon>PasswordRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Bend.resx">
+      <DependentUpon>Bend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BendOptions.resx">
+      <DependentUpon>BendOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Config.resx">
+      <DependentUpon>Config.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordRequest.resx">
+      <DependentUpon>PasswordRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\DataSources\Config.datasource" />
+    <None Include="Properties\DataSources\MainWindow.datasource" />
+    <None Include="Properties\DataSources\PasswordRequest.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\_3DTubeBender.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\_3DTubeBender.Properties.Settings.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChooseBend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChooseBendHighlighted.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConfigHighlighted.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Config.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StartBend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StartBendHighlighted.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bender.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

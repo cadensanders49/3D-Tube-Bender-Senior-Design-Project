@@ -1,0 +1,50 @@
+5 0 acceleration
+8 0 speed
+5 1 acceleration
+8 1 speed
+### Sequence subroutines: ###
+### Sequence subroutines: ###
+
+# Sequence 0
+sub Sequence_0
+  5000 1984 1984 0 0 0 0 
+  0 0 0 0 0 0 frame_0..11 # Frame 0
+  5000 2784 2784 frame_0_1 # Frame 1
+  5000 3584 3584 frame_0_1 # Frame 2
+  5000 4384 4384 frame_0_1 # Frame 3
+  5000 5184 5184 frame_0_1 # Frame 4
+  5000 5984 5984 frame_0_1 # Frame 5
+  5000 6784 6784 frame_0_1 # Frame 6
+  5000 7584 7584 frame_0_1 # Frame 7
+  5000 8384 8384 frame_0_1 # Frame 8
+  5000 9152 9152 frame_0_1 # Frame 9
+  10000 1984 1984 frame_0_1 # Frame 10
+  return
+# Sequence 1
+sub Sequence_1
+  15000 9152 9152 0 0 0 0 
+  0 0 0 0 0 0 frame_0..11 # Frame 0
+  15000 1984 1984 frame_0_1 # Frame 1
+  return
+
+sub frame_0..11
+  11 servo
+  10 servo
+  9 servo
+  8 servo
+  7 servo
+  6 servo
+  5 servo
+  4 servo
+  3 servo
+  2 servo
+  1 servo
+  0 servo
+  delay
+  return
+
+sub frame_0_1
+  1 servo
+  0 servo
+  delay
+  return
