@@ -117,73 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="BendOptions.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-        DEIPYJQy/Q+cC9+kuTzcvAAAAABJRU5ErkJggg==
-</value>
+  <data name="messageBoard.Text" xml:space="preserve">
+    <value>Welcome to the 3D Tube Bender. First, a tube must be loaded. Check off all items on the left to prepare for loading. Click the button below to set the system to the tube loading position after all preparations are completed and checked off.</value>
   </data>
+  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAUAEBAAAAEAIABoBAAAVgAAABgYAAABACAAiAkAAL4EAAAgIAAAAQAgAKgQAABGDgAAMDAAAAEA

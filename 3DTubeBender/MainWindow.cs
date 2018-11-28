@@ -11,70 +11,72 @@ namespace _3DTubeBender
         {
             InitializeComponent();
         }
-
+        
 
         //
-        //      BEND OPTIONS BUTTON
+        //      CLOSE BUTTON
         //
 
-        // Object: Bend Options Button
+        // Object: Close Button
         // Action: Mouse Enters
-        private void pictureBox1_MouseEnter(object sender, EventArgs e)
+        private void closeButton_MouseEnter(object sender, EventArgs e)
         {
-            BendOptions.Image = Resources.ChooseBendHighlighted;
+            closeButton.Image = Resources.Close___Highlighted;
         }
-        // Object: Bend Options Button
+
+        // Object: Close Button
         // Action: Mouse Leaves
-        private void pictureBox1_MouseLeave(object sender, EventArgs e)
+        private void closeButton_MouseLeave(object sender, EventArgs e)
         {
-            BendOptions.Image = Resources.ChooseBend;
+            closeButton.Image = Resources.Close___Unhighlighted;
         }
-        // Object: Bend Options Button
+
+        // Object: Close Button
         // Action: Click
-        private void BendOptions_Click(object sender, EventArgs e)
+        private void closeButton_Click(object sender, EventArgs e)
         {
-            BendOptions bendWindow = new BendOptions();
-            if (bendWindow.ShowDialog() == DialogResult.OK)
-            {
-                //This is where you can do things until the Done button is pressed.
-            }
+            Close();
         }
 
 
         //
-        //      X BUTTON
+        //      SETTINGS BUTTON (AKA SYSTEM CONFIGURATION)
         //
 
-        // Object: X Button
+        // Object: Settings Button
+        // Action: Mouse Enter
+        private void settings_MouseEnter(object sender, EventArgs e)
+        {
+            settings.Image = Resources.Settings___Highlighted;
+        }
+
+        // Object: Settings Button
+        // Action: Mouse Leave
+        private void settings_MouseLeave(object sender, EventArgs e)
+        {
+            settings.Image = Resources.Settings___Unhighlighted;
+        }
+
+        // Object: Settings Button
+        // Action: Mouse is pressed down
+        private void settings_MouseDown(object sender, MouseEventArgs e)
+        {
+            settings.Image = Resources.Settings___Clicked;
+        }
+
+        // Object: Settings Button
+        // Action: Mouse is released
+        private void settings_MouseUp(object sender, MouseEventArgs e)
+        {
+            settings.Image = Resources.Settings___Unhighlighted;
+        }
+
+        // Object: Settings Button
         // Action: Click
-        private void Form1_MouseClick(object sender, MouseEventArgs e)
-        {
-            Application.Exit();
-        }
-
-
-        //
-        //      CONFIGURATION BUTTON
-        //
-
-        // Object: Configuration Options Button
-        // Action: Mouse Enters
-        private void ConfigOptions_MouseEnter(object sender, EventArgs e)
-        {
-            ConfigOptions.Image = Resources.ConfigHighlighted;
-        }
-        // Object: Configuration Options Button
-        // Action: Mouse Leaves
-        private void ConfigOptions_MouseLeave(object sender, EventArgs e)
-        {
-            ConfigOptions.Image = Resources.Config;
-        }
-        // Object: Configuration Options Button
-        // Action: Click
-        private void ConfigOptions_Click(object sender, EventArgs e)
+        private void settings_Click(object sender, EventArgs e)
         {
             //This is the case that the pw is enabled
-            if(Program.pwEnabled == true)
+            if (Program.pwEnabled == true)
             {
                 // First, open the Password Request window that will ask for a pw
                 // Window will stay open until the pw is entered correctly
@@ -108,52 +110,143 @@ namespace _3DTubeBender
                     Program.UpdateDeviceConnections();
                 }
             }
-            
         }
 
 
         //
-        //      START BEND BUTTON
+        //      INFO BUTTON
         //
 
-        // Object: Start Bend Button
-        // Action: Mouse Enters
-        private void startBend_MouseEnter(object sender, EventArgs e)
+        // Object: Info Button
+        // Action: Mouse Enter
+        private void info_MouseEnter(object sender, EventArgs e)
         {
-            startBend.Image = Resources.StartBendHighlighted;
+            info.Image = Resources.Info___Highlighted;
         }
-        // Object: Start Bend Button
-        // Action: Mouse Leaves
-        private void startBend_MouseLeave(object sender, EventArgs e)
+
+        // Object: Info Button
+        // Action: Mouse Leave
+        private void info_MouseLeave(object sender, EventArgs e)
         {
-            startBend.Image = Resources.StartBend;
+            info.Image = Resources.Info;
         }
-        // Object: Start Bend Button
+
+        // Object: Info Button
+        // Action: Mouse is pressed down
+        private void info_MouseDown(object sender, MouseEventArgs e)
+        {
+            info.Image = Resources.Info___Clicked;
+        }
+
+        // Object: Info Button
+        // Action: Mouse is released
+        private void info_MouseUp(object sender, MouseEventArgs e)
+        {
+            info.Image = Resources.Info;
+        }
+
+        // Object: Info Button
         // Action: Click
-        private void startBend_Click(object sender, EventArgs e)
+        private void info_Click(object sender, EventArgs e)
         {
-            // Setup the Bend window
-            using (var startBend = new Bend())
+            //Code for showing info
+        }
+
+
+        //
+        //      LOAD TUBE CHECK BOXES
+        //
+
+        // Object: Power Check Box
+        // Action: Check Changes
+        private void powerCheck_CheckedChanged(object sender, EventArgs e)
+        {
+            if (powerCheck.Checked == true &&
+                obstructionCheck.Checked == true &&
+                harmReductionCheck.Checked == true &&
+                usbCheck.Checked == true)
             {
-                // Notifies user that there was no file chosen yet
-                // This will need to change later once bend option buttons
-                // are added.
-                if (Equals(Program.fileName, ""))
-                {
-                    MessageBox.Show("You must choose a bend first.");
-                    this.DialogResult = DialogResult.Cancel;
-                    return;
-                }
+                loadButton.Enabled = true;
+            }
+            else
+            {
+                loadButton.Enabled = false;
+            }
+        }
 
-                // Update connections, start the motors, and start the
-                //bend sequence stored in the specified file.
-                Program.UpdateDeviceConnections();
-                Program.startMotors();
-                Program.runScript(Program.usc, Program.fileName);
+        // Object: Obstruction Check Box
+        // Action: Check Changes
+        private void obstructionCheck_CheckedChanged(object sender, EventArgs e)
+        {
+            if (powerCheck.Checked == true &&
+                obstructionCheck.Checked == true &&
+                harmReductionCheck.Checked == true &&
+                usbCheck.Checked == true)
+            {
+                loadButton.Enabled = true;
+            }
+            else
+            {
+                loadButton.Enabled = false;
+            }
+        }
 
-                // Actually open the window
-                // Will not open the window if the code does not get to this point.
-                startBend.ShowDialog();
+        // Object: Harm Reduction Check Box
+        // Action: Check Changes
+        private void harmReductionCheck_CheckedChanged(object sender, EventArgs e)
+        {
+            if (powerCheck.Checked == true &&
+                obstructionCheck.Checked == true &&
+                harmReductionCheck.Checked == true &&
+                usbCheck.Checked == true)
+            {
+                loadButton.Enabled = true;
+            }
+            else
+            {
+                loadButton.Enabled = false;
+            }
+        }
+
+        // Object: USB Check Box
+        // Action: Check Changes
+        private void usbCheck_CheckedChanged(object sender, EventArgs e)
+        {
+            if (powerCheck.Checked == true &&
+                obstructionCheck.Checked == true &&
+                harmReductionCheck.Checked == true &&
+                usbCheck.Checked == true)
+            {
+                loadButton.Enabled = true;
+            }
+            else
+            {
+                loadButton.Enabled = false;
+            }
+        }
+
+
+        //
+        //      LOAD TUBE BUTTON
+        //
+
+        // Object: Load Tube Button
+        // Action: Click
+        private void loadButton_Click(object sender, EventArgs e)
+        {
+            powerCheck.Checked = false;
+            obstructionCheck.Checked = false;
+            harmReductionCheck.Checked = false;
+            usbCheck.Checked = false;
+
+            // Set motors to loading position and set window for 
+            // choosing a bend. Use the loading bar to signify progress.
+
+            BendOptions bendWindow = new BendOptions();
+            if (bendWindow.ShowDialog() == DialogResult.OK)
+            {
+                //This is where you can do things until the Done button is pressed.
+                
             }
         }
     }

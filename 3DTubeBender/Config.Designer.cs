@@ -50,9 +50,13 @@
             this.statusUpdateTimer = new System.Windows.Forms.Timer(this.components);
             this.pwEnabledBox = new System.Windows.Forms.CheckBox();
             this.printTimer = new System.Windows.Forms.Timer(this.components);
+            this.closeButton = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.statusDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.jrkDataSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.targetSelector)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.closeButton)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // status
@@ -77,7 +81,7 @@
             // 
             // uploadConfiguration
             // 
-            this.uploadConfiguration.Location = new System.Drawing.Point(618, 70);
+            this.uploadConfiguration.Location = new System.Drawing.Point(618, 155);
             this.uploadConfiguration.Name = "uploadConfiguration";
             this.uploadConfiguration.Size = new System.Drawing.Size(158, 23);
             this.uploadConfiguration.TabIndex = 2;
@@ -87,7 +91,7 @@
             // 
             // downloadConfiguration
             // 
-            this.downloadConfiguration.Location = new System.Drawing.Point(618, 41);
+            this.downloadConfiguration.Location = new System.Drawing.Point(618, 126);
             this.downloadConfiguration.Name = "downloadConfiguration";
             this.downloadConfiguration.Size = new System.Drawing.Size(158, 23);
             this.downloadConfiguration.TabIndex = 3;
@@ -97,7 +101,7 @@
             // 
             // firmwareUpdate
             // 
-            this.firmwareUpdate.Location = new System.Drawing.Point(618, 12);
+            this.firmwareUpdate.Location = new System.Drawing.Point(618, 97);
             this.firmwareUpdate.Name = "firmwareUpdate";
             this.firmwareUpdate.Size = new System.Drawing.Size(158, 23);
             this.firmwareUpdate.TabIndex = 4;
@@ -123,7 +127,7 @@
             this.statusDataGrid.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.statusDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.statusDataGrid.ColumnHeadersVisible = false;
-            this.statusDataGrid.Location = new System.Drawing.Point(159, 103);
+            this.statusDataGrid.Location = new System.Drawing.Point(159, 132);
             this.statusDataGrid.Name = "statusDataGrid";
             this.statusDataGrid.ReadOnly = true;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
@@ -139,7 +143,7 @@
             // 
             // errorTesting
             // 
-            this.errorTesting.Location = new System.Drawing.Point(618, 99);
+            this.errorTesting.Location = new System.Drawing.Point(618, 184);
             this.errorTesting.Name = "errorTesting";
             this.errorTesting.Size = new System.Drawing.Size(158, 23);
             this.errorTesting.TabIndex = 8;
@@ -149,7 +153,7 @@
             // 
             // notificationBox
             // 
-            this.notificationBox.Location = new System.Drawing.Point(159, 72);
+            this.notificationBox.Location = new System.Drawing.Point(159, 99);
             this.notificationBox.Name = "notificationBox";
             this.notificationBox.Size = new System.Drawing.Size(424, 20);
             this.notificationBox.TabIndex = 9;
@@ -157,7 +161,7 @@
             // 
             // startMotors
             // 
-            this.startMotors.Location = new System.Drawing.Point(378, 12);
+            this.startMotors.Location = new System.Drawing.Point(377, 61);
             this.startMotors.Name = "startMotors";
             this.startMotors.Size = new System.Drawing.Size(103, 23);
             this.startMotors.TabIndex = 10;
@@ -167,7 +171,7 @@
             // 
             // stopMotors
             // 
-            this.stopMotors.Location = new System.Drawing.Point(487, 12);
+            this.stopMotors.Location = new System.Drawing.Point(486, 61);
             this.stopMotors.Name = "stopMotors";
             this.stopMotors.Size = new System.Drawing.Size(96, 23);
             this.stopMotors.TabIndex = 11;
@@ -177,7 +181,7 @@
             // 
             // targetSelector
             // 
-            this.targetSelector.Location = new System.Drawing.Point(618, 179);
+            this.targetSelector.Location = new System.Drawing.Point(618, 267);
             this.targetSelector.Maximum = new decimal(new int[] {
             180,
             0,
@@ -191,7 +195,7 @@
             // targetSelectorLabel
             // 
             this.targetSelectorLabel.AutoSize = true;
-            this.targetSelectorLabel.Location = new System.Drawing.Point(615, 163);
+            this.targetSelectorLabel.Location = new System.Drawing.Point(615, 251);
             this.targetSelectorLabel.Name = "targetSelectorLabel";
             this.targetSelectorLabel.Size = new System.Drawing.Size(111, 13);
             this.targetSelectorLabel.TabIndex = 13;
@@ -240,12 +244,39 @@
             this.printTimer.Interval = 10000;
             this.printTimer.Tick += new System.EventHandler(this.printTimer_Tick);
             // 
+            // closeButton
+            // 
+            this.closeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(99)))), ((int)(((byte)(150)))));
+            this.closeButton.BackgroundImage = global::_3DTubeBender.Properties.Resources.Close___Unhighlighted;
+            this.closeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.closeButton.Location = new System.Drawing.Point(779, 1);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.Size = new System.Drawing.Size(29, 27);
+            this.closeButton.TabIndex = 18;
+            this.closeButton.TabStop = false;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
+            this.closeButton.MouseEnter += new System.EventHandler(this.closeButton_MouseEnter);
+            this.closeButton.MouseLeave += new System.EventHandler(this.closeButton_MouseLeave);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BackgroundImage = global::_3DTubeBender.Properties.Resources.Toolbar;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel1.Controls.Add(this.closeButton);
+            this.panel1.Location = new System.Drawing.Point(-4, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(808, 29);
+            this.panel1.TabIndex = 19;
+            // 
             // Config
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::_3DTubeBender.Properties.Resources.Background;
-            this.ClientSize = new System.Drawing.Size(788, 410);
+            this.BackgroundImage = global::_3DTubeBender.Properties.Resources.New_Background;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(805, 505);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.pwEnabledBox);
             this.Controls.Add(this.stopStreamButton);
             this.Controls.Add(this.startStreamButton);
@@ -262,16 +293,19 @@
             this.Controls.Add(this.uploadConfiguration);
             this.Controls.Add(this.statusDataGrid);
             this.Controls.Add(this.done);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Config";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Configuration Utility";
+            this.Text = "System Configuration";
             ((System.ComponentModel.ISupportInitialize)(this.statusDataGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.jrkDataSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.targetSelector)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.closeButton)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -298,5 +332,7 @@
         private System.Windows.Forms.Timer statusUpdateTimer;
         private System.Windows.Forms.CheckBox pwEnabledBox;
         private System.Windows.Forms.Timer printTimer;
+        private System.Windows.Forms.PictureBox closeButton;
+        private System.Windows.Forms.Panel panel1;
     }
 }

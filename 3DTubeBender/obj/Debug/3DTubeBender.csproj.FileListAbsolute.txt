@@ -113,3 +113,21 @@ C:\Users\tsu\OneDrive - Texas State University\School\Fall 2018\Senior Design\Co
 C:\Users\tsu\OneDrive - Texas State University\School\Fall 2018\Senior Design\Code\3DTubeBender 3.0\3DTubeBender\obj\Debug\3DTubeBender.csproj.CopyComplete
 C:\Users\tsu\OneDrive - Texas State University\School\Fall 2018\Senior Design\Code\3DTubeBender 3.0\3DTubeBender\obj\Debug\3DTubeBender.exe
 C:\Users\tsu\OneDrive - Texas State University\School\Fall 2018\Senior Design\Code\3DTubeBender 3.0\3DTubeBender\obj\Debug\3DTubeBender.pdb
+C:\Users\Caden Sanders\Documents\GitHub\3D-Tube-Bender\3DTubeBender\bin\Debug\3DTubeBender.exe
+C:\Users\Caden Sanders\Documents\GitHub\3D-Tube-Bender\3DTubeBender\bin\Debug\3DTubeBender.pdb
+C:\Users\Caden Sanders\Documents\GitHub\3D-Tube-Bender\3DTubeBender\bin\Debug\Jrk.pdb
+C:\Users\Caden Sanders\Documents\GitHub\3D-Tube-Bender\3DTubeBender\bin\Debug\Sequencer.pdb
+C:\Users\Caden Sanders\Documents\GitHub\3D-Tube-Bender\3DTubeBender\bin\Debug\UsbWrapper.xml
+C:\Users\Caden Sanders\Documents\GitHub\3D-Tube-Bender\3DTubeBender\bin\Debug\Usc.pdb
+C:\Users\Caden Sanders\Documents\GitHub\3D-Tube-Bender\3DTubeBender\obj\Debug\3DTubeBender.csprojAssemblyReference.cache
+C:\Users\Caden Sanders\Documents\GitHub\3D-Tube-Bender\3DTubeBender\obj\Debug\_3DTubeBender.Bend.resources
+C:\Users\Caden Sanders\Documents\GitHub\3D-Tube-Bender\3DTubeBender\obj\Debug\_3DTubeBender.BendOptions.resources
+C:\Users\Caden Sanders\Documents\GitHub\3D-Tube-Bender\3DTubeBender\obj\Debug\_3DTubeBender.Config.resources
+C:\Users\Caden Sanders\Documents\GitHub\3D-Tube-Bender\3DTubeBender\obj\Debug\_3DTubeBender.MainWindow.resources
+C:\Users\Caden Sanders\Documents\GitHub\3D-Tube-Bender\3DTubeBender\obj\Debug\_3DTubeBender.PasswordRequest.resources
+C:\Users\Caden Sanders\Documents\GitHub\3D-Tube-Bender\3DTubeBender\obj\Debug\_3DTubeBender.Properties.Resources.resources
+C:\Users\Caden Sanders\Documents\GitHub\3D-Tube-Bender\3DTubeBender\obj\Debug\3DTubeBender.csproj.GenerateResource.cache
+C:\Users\Caden Sanders\Documents\GitHub\3D-Tube-Bender\3DTubeBender\obj\Debug\3DTubeBender.csproj.CoreCompileInputs.cache
+C:\Users\Caden Sanders\Documents\GitHub\3D-Tube-Bender\3DTubeBender\obj\Debug\3DTubeBender.csproj.CopyComplete
+C:\Users\Caden Sanders\Documents\GitHub\3D-Tube-Bender\3DTubeBender\obj\Debug\3DTubeBender.exe
+C:\Users\Caden Sanders\Documents\GitHub\3D-Tube-Bender\3DTubeBender\obj\Debug\3DTubeBender.pdb

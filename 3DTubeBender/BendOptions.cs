@@ -51,6 +51,95 @@ namespace _3DTubeBender
         {
             this.DialogResult = DialogResult.OK;
         }
-        
+
+        //
+        // DONE BUTTON
+        //
+
+        // Object: Start Bend Button
+        // Action: Click
+        private void startBend_Click(object sender, EventArgs e)
+        {
+            // Setup the Bend window
+            using (var Bend = new Bend())
+            {
+                // Notifies user that there was no file chosen yet
+                // This will need to change later once bend option buttons
+                // are added.
+                if (Equals(Program.fileName, ""))
+                {
+                    MessageBox.Show("You must choose a bend first.");
+                    this.DialogResult = DialogResult.Cancel;
+                    return;
+                }
+
+                // Update connections, start the motors, and start the
+                //bend sequence stored in the specified file.
+                Program.UpdateDeviceConnections();
+                Program.startMotors();
+                Program.runScript(Program.usc, Program.fileName);
+
+                // Actually open the window
+                // Will not open the window if the code does not get to this point.
+                Bend.ShowDialog();
+
+                loadCheck.Checked = false;
+                obstructionCheck.Checked = false;
+                harmReductionCheck.Checked = false;
+            }
+        }
+
+
+        //
+        //      BEND PREPARATION CHECK BOXES
+        //
+
+        // Object: Tube Load Check Box
+        // Action: Check Changes
+        private void loadCheck_CheckedChanged(object sender, EventArgs e)
+        {
+            if (loadCheck.Checked == true &&
+                obstructionCheck.Checked == true &&
+                harmReductionCheck.Checked == true)
+            {
+                startBend.Enabled = true;
+            }
+            else
+            {
+                startBend.Enabled = false;
+            }
+        }
+
+        // Object: Obstruction Check Box
+        // Action: Check Changes
+        private void obstructionCheck_CheckedChanged(object sender, EventArgs e)
+        {
+            if (loadCheck.Checked == true &&
+                obstructionCheck.Checked == true &&
+                harmReductionCheck.Checked == true)
+            {
+                startBend.Enabled = true;
+            }
+            else
+            {
+                startBend.Enabled = false;
+            }
+        }
+
+        // Object: Harm Reduction Check Box
+        // Action: Check Changes
+        private void harmReductionCheck_CheckedChanged(object sender, EventArgs e)
+        {
+            if (loadCheck.Checked == true &&
+                obstructionCheck.Checked == true &&
+                harmReductionCheck.Checked == true)
+            {
+                startBend.Enabled = true;
+            }
+            else
+            {
+                startBend.Enabled = false;
+            }
+        }
     }
 }

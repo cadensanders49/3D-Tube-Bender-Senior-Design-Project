@@ -118,9 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Background.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Bender" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Bender.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -130,16 +127,52 @@
   <data name="ChooseBendHighlighted" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ChooseBendHighlighted.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Close___Highlighted" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Close - Highlighted.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Close___Unhighlighted" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Close - Unhighlighted.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Config" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Config.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ConfigHighlighted" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ConfigHighlighted.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Emergency_Stop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Emergency Stop.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Emergency_Stop___Clicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Emergency Stop - Clicked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Info" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Info.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Info___Clicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Info - Clicked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Info___Highlighted" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Info - Highlighted.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New Background.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Settings___Clicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Settings - Clicked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Settings___Highlighted" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Settings - Highlighted.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Settings___Unhighlighted" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Settings - Unhighlighted.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="StartBend" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\StartBend.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="StartBendHighlighted" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\StartBendHighlighted.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Toolbar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Toolbar.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

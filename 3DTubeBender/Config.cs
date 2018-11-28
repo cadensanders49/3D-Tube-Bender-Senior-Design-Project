@@ -1,4 +1,5 @@
-﻿using Pololu.Jrk;
+﻿using _3DTubeBender.Properties;
+using Pololu.Jrk;
 using Pololu.Usc;
 using System;
 using System.Windows.Forms;
@@ -334,6 +335,30 @@ namespace _3DTubeBender
             Program.pwEnabled = pwEnabledBox.Checked;
         }
 
-        
+
+        //
+        //      CLOSE BUTTON
+        //
+
+        // Object: Close Button
+        // Action: Mouse Enters
+        private void closeButton_MouseEnter(object sender, EventArgs e)
+        {
+            closeButton.Image = Resources.Close___Highlighted;
+        }
+
+        // Object: Close Button
+        // Action: Mouse Leaves
+        private void closeButton_MouseLeave(object sender, EventArgs e)
+        {
+            closeButton.Image = Resources.Close___Unhighlighted;
+        }
+
+        // Object: Close Button
+        // Action: Click
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }

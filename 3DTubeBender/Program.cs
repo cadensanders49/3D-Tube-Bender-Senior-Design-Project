@@ -67,13 +67,13 @@ namespace _3DTubeBender
             //Determines if the pw is inherently enabled
             pwEnabled = false;
 
-            // Main window is opened
-            Application.Run(new MainWindow());
-
             // It's important to disconnect from devices, if needed
             // There will be an error if the devices are connected elsewhere.
             // This function will disconnect all devices as well as reconnect them.
             UpdateDeviceConnections();
+
+            // Main window is opened
+            Application.Run(new MainWindow());
         }
 
         // This function is called when the device connections need to be updated.
