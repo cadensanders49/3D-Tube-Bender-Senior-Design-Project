@@ -149,7 +149,12 @@ namespace _3DTubeBender
         // Action: Click
         private void info_Click(object sender, EventArgs e)
         {
-            //Code for showing info
+            MessageBox.Show(
+                "Version: 1.0\n" +
+                "Author: Caden Sanders\n" +
+                "School: Texas State University\n\n" +
+                "Follow the instructions on the main screen to bend a tube."
+            );
         }
 
 

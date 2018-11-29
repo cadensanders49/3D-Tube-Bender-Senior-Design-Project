@@ -54,7 +54,7 @@ namespace _3DTubeBender
         }
 
         //
-        // DONE BUTTON
+        // START BEND BUTTON
         //
 
         // Object: Start Bend Button
@@ -143,6 +143,48 @@ namespace _3DTubeBender
             }
         }
 
-        
+        //
+        //      CLOSE BUTTON
+        //
+
+        // Object: Close Button
+        // Action: Mouse Enters
+        private void closeButton_MouseEnter(object sender, EventArgs e)
+        {
+            closeButton.Image = Resources.Close___Highlighted;
+        }
+
+        // Object: Close Button
+        // Action: Mouse Leaves
+        private void closeButton_MouseLeave(object sender, EventArgs e)
+        {
+            closeButton.Image = Resources.Close___Unhighlighted;
+        }
+
+        // Object: Close Button
+        // Action: Click
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+
+        //
+        //      RADIO BUTTONS
+        //
+
+        // Object: Custom Radio Button
+        // Action: Check Changed
+        private void radioButton5_CheckedChanged(object sender, EventArgs e)
+        {
+            if(radioButton5.Checked == true)
+            {
+                customBendUpDown.Visible = true;
+            }
+            else
+            {
+                customBendUpDown.Visible = false;
+            }
+        }
     }
 }

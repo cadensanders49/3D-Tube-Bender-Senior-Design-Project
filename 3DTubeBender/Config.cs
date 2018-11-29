@@ -1,4 +1,5 @@
-﻿using _3DTubeBender.Properties;
+﻿//using _3DTubeBender.Properties;
+using _3DTubeBender.Properties;
 using Pololu.Jrk;
 using Pololu.Usc;
 using System;
@@ -360,5 +361,6 @@ namespace _3DTubeBender
         {
             Environment.Exit(0);
         }
+        
     }
 }

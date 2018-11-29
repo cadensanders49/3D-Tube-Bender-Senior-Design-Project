@@ -32,6 +32,7 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.doneButton = new System.Windows.Forms.Button();
             this.toolbar = new System.Windows.Forms.Panel();
+            this.closeButton = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.harmReductionCheck = new System.Windows.Forms.CheckBox();
             this.obstructionCheck = new System.Windows.Forms.CheckBox();
@@ -39,7 +40,17 @@
             this.startBend = new System.Windows.Forms.Button();
             this.messageBoard = new System.Windows.Forms.Label();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.bendOptionPanel = new System.Windows.Forms.Panel();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.customBendUpDown = new System.Windows.Forms.NumericUpDown();
+            this.toolbar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.closeButton)).BeginInit();
             this.panel2.SuspendLayout();
+            this.bendOptionPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.customBendUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // manualBendFile
@@ -62,7 +73,7 @@
             this.doneButton.Name = "doneButton";
             this.doneButton.Size = new System.Drawing.Size(75, 23);
             this.doneButton.TabIndex = 1;
-            this.doneButton.Text = "Home";
+            this.doneButton.Text = "Back";
             this.doneButton.UseVisualStyleBackColor = true;
             this.doneButton.Click += new System.EventHandler(this.doneButton_Click);
             // 
@@ -71,10 +82,26 @@
             this.toolbar.BackColor = System.Drawing.Color.White;
             this.toolbar.BackgroundImage = global::_3DTubeBender.Properties.Resources.Toolbar;
             this.toolbar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.toolbar.Controls.Add(this.closeButton);
             this.toolbar.Location = new System.Drawing.Point(-4, 0);
             this.toolbar.Name = "toolbar";
             this.toolbar.Size = new System.Drawing.Size(804, 29);
             this.toolbar.TabIndex = 8;
+            // 
+            // closeButton
+            // 
+            this.closeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(99)))), ((int)(((byte)(150)))));
+            this.closeButton.BackgroundImage = global::_3DTubeBender.Properties.Resources.Close___Unhighlighted;
+            this.closeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.closeButton.Location = new System.Drawing.Point(776, 1);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.Size = new System.Drawing.Size(29, 27);
+            this.closeButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.closeButton.TabIndex = 20;
+            this.closeButton.TabStop = false;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
+            this.closeButton.MouseEnter += new System.EventHandler(this.closeButton_MouseEnter);
+            this.closeButton.MouseLeave += new System.EventHandler(this.closeButton_MouseLeave);
             // 
             // panel2
             // 
@@ -132,7 +159,7 @@
             this.startBend.FlatAppearance.BorderSize = 2;
             this.startBend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.startBend.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.startBend.Location = new System.Drawing.Point(442, 404);
+            this.startBend.Location = new System.Drawing.Point(451, 339);
             this.startBend.Name = "startBend";
             this.startBend.Size = new System.Drawing.Size(124, 44);
             this.startBend.TabIndex = 13;
@@ -155,13 +182,104 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(325, 189);
+            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton1.Location = new System.Drawing.Point(6, 7);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(85, 17);
+            this.radioButton1.Size = new System.Drawing.Size(144, 24);
             this.radioButton1.TabIndex = 15;
             this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
+            this.radioButton1.Text = "15 Degree Bend";
             this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton2.Location = new System.Drawing.Point(6, 33);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(144, 24);
+            this.radioButton2.TabIndex = 16;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "30 Degree Bend";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // bendOptionPanel
+            // 
+            this.bendOptionPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(148)))), ((int)(((byte)(194)))));
+            this.bendOptionPanel.Controls.Add(this.customBendUpDown);
+            this.bendOptionPanel.Controls.Add(this.radioButton5);
+            this.bendOptionPanel.Controls.Add(this.radioButton4);
+            this.bendOptionPanel.Controls.Add(this.radioButton3);
+            this.bendOptionPanel.Controls.Add(this.radioButton1);
+            this.bendOptionPanel.Controls.Add(this.radioButton2);
+            this.bendOptionPanel.Location = new System.Drawing.Point(429, 149);
+            this.bendOptionPanel.Name = "bendOptionPanel";
+            this.bendOptionPanel.Size = new System.Drawing.Size(207, 151);
+            this.bendOptionPanel.TabIndex = 17;
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton5.Location = new System.Drawing.Point(6, 113);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(124, 24);
+            this.radioButton5.TabIndex = 19;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "Custom Bend";
+            this.radioButton5.UseVisualStyleBackColor = true;
+            this.radioButton5.CheckedChanged += new System.EventHandler(this.radioButton5_CheckedChanged);
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton4.Location = new System.Drawing.Point(6, 86);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(144, 24);
+            this.radioButton4.TabIndex = 18;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "60 Degree Bend";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton3.Location = new System.Drawing.Point(6, 59);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(144, 24);
+            this.radioButton3.TabIndex = 17;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "45 Degree Bend";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // customBendUpDown
+            // 
+            this.customBendUpDown.BackColor = System.Drawing.SystemColors.Window;
+            this.customBendUpDown.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.customBendUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customBendUpDown.Location = new System.Drawing.Point(136, 115);
+            this.customBendUpDown.Maximum = new decimal(new int[] {
+            60,
+            0,
+            0,
+            0});
+            this.customBendUpDown.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.customBendUpDown.Name = "customBendUpDown";
+            this.customBendUpDown.Size = new System.Drawing.Size(47, 22);
+            this.customBendUpDown.TabIndex = 18;
+            this.customBendUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.customBendUpDown.Value = new decimal(new int[] {
+            45,
+            0,
+            0,
+            0});
+            this.customBendUpDown.Visible = false;
             // 
             // BendOptions
             // 
@@ -170,7 +288,7 @@
             this.BackgroundImage = global::_3DTubeBender.Properties.Resources.New_Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(801, 501);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.bendOptionPanel);
             this.Controls.Add(this.messageBoard);
             this.Controls.Add(this.startBend);
             this.Controls.Add(this.panel2);
@@ -184,10 +302,14 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Bend Options";
+            this.toolbar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.closeButton)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.bendOptionPanel.ResumeLayout(false);
+            this.bendOptionPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.customBendUpDown)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -203,5 +325,12 @@
         private System.Windows.Forms.CheckBox obstructionCheck;
         private System.Windows.Forms.CheckBox harmReductionCheck;
         private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.Panel bendOptionPanel;
+        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.PictureBox closeButton;
+        private System.Windows.Forms.NumericUpDown customBendUpDown;
     }
 }

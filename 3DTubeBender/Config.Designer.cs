@@ -29,9 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.status = new System.Windows.Forms.Button();
-            this.clearErrors = new System.Windows.Forms.Button();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.uploadConfiguration = new System.Windows.Forms.Button();
             this.downloadConfiguration = new System.Windows.Forms.Button();
             this.firmwareUpdate = new System.Windows.Forms.Button();
@@ -45,43 +43,29 @@
             this.stopMotors = new System.Windows.Forms.Button();
             this.targetSelector = new System.Windows.Forms.NumericUpDown();
             this.targetSelectorLabel = new System.Windows.Forms.Label();
-            this.startStreamButton = new System.Windows.Forms.Button();
-            this.stopStreamButton = new System.Windows.Forms.Button();
             this.statusUpdateTimer = new System.Windows.Forms.Timer(this.components);
             this.pwEnabledBox = new System.Windows.Forms.CheckBox();
             this.printTimer = new System.Windows.Forms.Timer(this.components);
             this.closeButton = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.clearErrors = new System.Windows.Forms.Button();
+            this.stopStreamButton = new System.Windows.Forms.Button();
+            this.startStreamButton = new System.Windows.Forms.Button();
+            this.status = new System.Windows.Forms.Button();
+            this.sidePanel = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.statusDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.jrkDataSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.targetSelector)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.closeButton)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.sidePanel.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // status
-            // 
-            this.status.Location = new System.Drawing.Point(12, 103);
-            this.status.Name = "status";
-            this.status.Size = new System.Drawing.Size(124, 23);
-            this.status.TabIndex = 0;
-            this.status.Text = "Update Status";
-            this.status.UseVisualStyleBackColor = true;
-            this.status.Click += new System.EventHandler(this.status_Click);
-            // 
-            // clearErrors
-            // 
-            this.clearErrors.Location = new System.Drawing.Point(12, 375);
-            this.clearErrors.Name = "clearErrors";
-            this.clearErrors.Size = new System.Drawing.Size(96, 23);
-            this.clearErrors.TabIndex = 1;
-            this.clearErrors.Text = "Clear Errors";
-            this.clearErrors.UseVisualStyleBackColor = true;
-            this.clearErrors.Click += new System.EventHandler(this.clearErrors_Click);
             // 
             // uploadConfiguration
             // 
-            this.uploadConfiguration.Location = new System.Drawing.Point(618, 155);
+            this.uploadConfiguration.Location = new System.Drawing.Point(39, 331);
             this.uploadConfiguration.Name = "uploadConfiguration";
             this.uploadConfiguration.Size = new System.Drawing.Size(158, 23);
             this.uploadConfiguration.TabIndex = 2;
@@ -91,7 +75,7 @@
             // 
             // downloadConfiguration
             // 
-            this.downloadConfiguration.Location = new System.Drawing.Point(618, 126);
+            this.downloadConfiguration.Location = new System.Drawing.Point(39, 302);
             this.downloadConfiguration.Name = "downloadConfiguration";
             this.downloadConfiguration.Size = new System.Drawing.Size(158, 23);
             this.downloadConfiguration.TabIndex = 3;
@@ -101,7 +85,7 @@
             // 
             // firmwareUpdate
             // 
-            this.firmwareUpdate.Location = new System.Drawing.Point(618, 97);
+            this.firmwareUpdate.Location = new System.Drawing.Point(39, 273);
             this.firmwareUpdate.Name = "firmwareUpdate";
             this.firmwareUpdate.Size = new System.Drawing.Size(158, 23);
             this.firmwareUpdate.TabIndex = 4;
@@ -111,11 +95,11 @@
             // 
             // done
             // 
-            this.done.Location = new System.Drawing.Point(675, 375);
+            this.done.Location = new System.Drawing.Point(688, 466);
             this.done.Name = "done";
             this.done.Size = new System.Drawing.Size(101, 23);
             this.done.TabIndex = 5;
-            this.done.Text = "Done";
+            this.done.Text = "Back";
             this.done.UseVisualStyleBackColor = true;
             this.done.Click += new System.EventHandler(this.done_Click);
             // 
@@ -127,23 +111,23 @@
             this.statusDataGrid.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.statusDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.statusDataGrid.ColumnHeadersVisible = false;
-            this.statusDataGrid.Location = new System.Drawing.Point(159, 132);
+            this.statusDataGrid.Location = new System.Drawing.Point(265, 82);
             this.statusDataGrid.Name = "statusDataGrid";
             this.statusDataGrid.ReadOnly = true;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.statusDataGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.statusDataGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.statusDataGrid.RowHeadersVisible = false;
             this.statusDataGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            this.statusDataGrid.Size = new System.Drawing.Size(424, 295);
+            this.statusDataGrid.Size = new System.Drawing.Size(524, 378);
             this.statusDataGrid.TabIndex = 7;
             // 
             // errorTesting
             // 
-            this.errorTesting.Location = new System.Drawing.Point(618, 184);
+            this.errorTesting.Location = new System.Drawing.Point(39, 360);
             this.errorTesting.Name = "errorTesting";
             this.errorTesting.Size = new System.Drawing.Size(158, 23);
             this.errorTesting.TabIndex = 8;
@@ -153,15 +137,16 @@
             // 
             // notificationBox
             // 
-            this.notificationBox.Location = new System.Drawing.Point(159, 99);
+            this.notificationBox.Location = new System.Drawing.Point(265, 34);
+            this.notificationBox.Multiline = true;
             this.notificationBox.Name = "notificationBox";
-            this.notificationBox.Size = new System.Drawing.Size(424, 20);
+            this.notificationBox.Size = new System.Drawing.Size(524, 42);
             this.notificationBox.TabIndex = 9;
             this.notificationBox.Text = "Notification Box...";
             // 
             // startMotors
             // 
-            this.startMotors.Location = new System.Drawing.Point(377, 61);
+            this.startMotors.Location = new System.Drawing.Point(11, 14);
             this.startMotors.Name = "startMotors";
             this.startMotors.Size = new System.Drawing.Size(103, 23);
             this.startMotors.TabIndex = 10;
@@ -171,7 +156,7 @@
             // 
             // stopMotors
             // 
-            this.stopMotors.Location = new System.Drawing.Point(486, 61);
+            this.stopMotors.Location = new System.Drawing.Point(131, 14);
             this.stopMotors.Name = "stopMotors";
             this.stopMotors.Size = new System.Drawing.Size(96, 23);
             this.stopMotors.TabIndex = 11;
@@ -181,7 +166,7 @@
             // 
             // targetSelector
             // 
-            this.targetSelector.Location = new System.Drawing.Point(618, 267);
+            this.targetSelector.Location = new System.Drawing.Point(5, 16);
             this.targetSelector.Maximum = new decimal(new int[] {
             180,
             0,
@@ -195,31 +180,11 @@
             // targetSelectorLabel
             // 
             this.targetSelectorLabel.AutoSize = true;
-            this.targetSelectorLabel.Location = new System.Drawing.Point(615, 251);
+            this.targetSelectorLabel.Location = new System.Drawing.Point(3, 0);
             this.targetSelectorLabel.Name = "targetSelectorLabel";
             this.targetSelectorLabel.Size = new System.Drawing.Size(111, 13);
             this.targetSelectorLabel.TabIndex = 13;
             this.targetSelectorLabel.Text = "Motor Angle Selection";
-            // 
-            // startStreamButton
-            // 
-            this.startStreamButton.Location = new System.Drawing.Point(12, 132);
-            this.startStreamButton.Name = "startStreamButton";
-            this.startStreamButton.Size = new System.Drawing.Size(124, 25);
-            this.startStreamButton.TabIndex = 14;
-            this.startStreamButton.Text = "Start Streaming Status";
-            this.startStreamButton.UseVisualStyleBackColor = true;
-            this.startStreamButton.Click += new System.EventHandler(this.startStreamButton_Click);
-            // 
-            // stopStreamButton
-            // 
-            this.stopStreamButton.Location = new System.Drawing.Point(12, 163);
-            this.stopStreamButton.Name = "stopStreamButton";
-            this.stopStreamButton.Size = new System.Drawing.Size(124, 24);
-            this.stopStreamButton.TabIndex = 15;
-            this.stopStreamButton.Text = "Stop Streaming Status";
-            this.stopStreamButton.UseVisualStyleBackColor = true;
-            this.stopStreamButton.Click += new System.EventHandler(this.stopStreamButton_Click);
             // 
             // statusUpdateTimer
             // 
@@ -229,14 +194,15 @@
             // pwEnabledBox
             // 
             this.pwEnabledBox.AutoSize = true;
+            this.pwEnabledBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(179)))), ((int)(((byte)(218)))));
             this.pwEnabledBox.Checked = true;
             this.pwEnabledBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.pwEnabledBox.Location = new System.Drawing.Point(618, 327);
+            this.pwEnabledBox.Location = new System.Drawing.Point(11, 440);
             this.pwEnabledBox.Name = "pwEnabledBox";
             this.pwEnabledBox.Size = new System.Drawing.Size(108, 17);
             this.pwEnabledBox.TabIndex = 16;
             this.pwEnabledBox.Text = "Enable Password";
-            this.pwEnabledBox.UseVisualStyleBackColor = true;
+            this.pwEnabledBox.UseVisualStyleBackColor = false;
             this.pwEnabledBox.CheckedChanged += new System.EventHandler(this.pwEnabledBox_CheckedChanged);
             // 
             // printTimer
@@ -249,7 +215,7 @@
             this.closeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(99)))), ((int)(((byte)(150)))));
             this.closeButton.BackgroundImage = global::_3DTubeBender.Properties.Resources.Close___Unhighlighted;
             this.closeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.closeButton.Location = new System.Drawing.Point(779, 1);
+            this.closeButton.Location = new System.Drawing.Point(776, 1);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(29, 27);
             this.closeButton.TabIndex = 18;
@@ -269,28 +235,86 @@
             this.panel1.Size = new System.Drawing.Size(808, 29);
             this.panel1.TabIndex = 19;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(179)))), ((int)(((byte)(218)))));
+            this.panel2.Controls.Add(this.targetSelector);
+            this.panel2.Controls.Add(this.targetSelectorLabel);
+            this.panel2.Location = new System.Drawing.Point(35, 56);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(115, 44);
+            this.panel2.TabIndex = 20;
+            // 
+            // clearErrors
+            // 
+            this.clearErrors.Location = new System.Drawing.Point(39, 222);
+            this.clearErrors.Name = "clearErrors";
+            this.clearErrors.Size = new System.Drawing.Size(158, 23);
+            this.clearErrors.TabIndex = 1;
+            this.clearErrors.Text = "Clear Errors";
+            this.clearErrors.UseVisualStyleBackColor = true;
+            this.clearErrors.Click += new System.EventHandler(this.clearErrors_Click);
+            // 
+            // stopStreamButton
+            // 
+            this.stopStreamButton.Location = new System.Drawing.Point(39, 175);
+            this.stopStreamButton.Name = "stopStreamButton";
+            this.stopStreamButton.Size = new System.Drawing.Size(158, 24);
+            this.stopStreamButton.TabIndex = 15;
+            this.stopStreamButton.Text = "Stop Streaming Status";
+            this.stopStreamButton.UseVisualStyleBackColor = true;
+            this.stopStreamButton.Click += new System.EventHandler(this.stopStreamButton_Click);
+            // 
+            // startStreamButton
+            // 
+            this.startStreamButton.Location = new System.Drawing.Point(39, 144);
+            this.startStreamButton.Name = "startStreamButton";
+            this.startStreamButton.Size = new System.Drawing.Size(158, 25);
+            this.startStreamButton.TabIndex = 14;
+            this.startStreamButton.Text = "Start Streaming Status";
+            this.startStreamButton.UseVisualStyleBackColor = true;
+            this.startStreamButton.Click += new System.EventHandler(this.startStreamButton_Click);
+            // 
+            // status
+            // 
+            this.status.Location = new System.Drawing.Point(39, 115);
+            this.status.Name = "status";
+            this.status.Size = new System.Drawing.Size(158, 23);
+            this.status.TabIndex = 0;
+            this.status.Text = "Update Status";
+            this.status.UseVisualStyleBackColor = true;
+            this.status.Click += new System.EventHandler(this.status_Click);
+            // 
+            // sidePanel
+            // 
+            this.sidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(179)))), ((int)(((byte)(218)))));
+            this.sidePanel.Controls.Add(this.status);
+            this.sidePanel.Controls.Add(this.panel2);
+            this.sidePanel.Controls.Add(this.startStreamButton);
+            this.sidePanel.Controls.Add(this.stopStreamButton);
+            this.sidePanel.Controls.Add(this.pwEnabledBox);
+            this.sidePanel.Controls.Add(this.clearErrors);
+            this.sidePanel.Controls.Add(this.stopMotors);
+            this.sidePanel.Controls.Add(this.errorTesting);
+            this.sidePanel.Controls.Add(this.startMotors);
+            this.sidePanel.Controls.Add(this.downloadConfiguration);
+            this.sidePanel.Controls.Add(this.firmwareUpdate);
+            this.sidePanel.Controls.Add(this.uploadConfiguration);
+            this.sidePanel.Location = new System.Drawing.Point(1, 30);
+            this.sidePanel.Name = "sidePanel";
+            this.sidePanel.Size = new System.Drawing.Size(240, 470);
+            this.sidePanel.TabIndex = 21;
+            // 
             // Config
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::_3DTubeBender.Properties.Resources.New_Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(805, 505);
+            this.ClientSize = new System.Drawing.Size(801, 501);
+            this.Controls.Add(this.sidePanel);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.pwEnabledBox);
-            this.Controls.Add(this.stopStreamButton);
-            this.Controls.Add(this.startStreamButton);
-            this.Controls.Add(this.targetSelectorLabel);
-            this.Controls.Add(this.targetSelector);
-            this.Controls.Add(this.stopMotors);
-            this.Controls.Add(this.startMotors);
             this.Controls.Add(this.notificationBox);
-            this.Controls.Add(this.errorTesting);
-            this.Controls.Add(this.clearErrors);
-            this.Controls.Add(this.status);
-            this.Controls.Add(this.downloadConfiguration);
-            this.Controls.Add(this.firmwareUpdate);
-            this.Controls.Add(this.uploadConfiguration);
             this.Controls.Add(this.statusDataGrid);
             this.Controls.Add(this.done);
             this.DoubleBuffered = true;
@@ -306,14 +330,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.targetSelector)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.closeButton)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.sidePanel.ResumeLayout(false);
+            this.sidePanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Button status;
-        private System.Windows.Forms.Button clearErrors;
         private System.Windows.Forms.Button uploadConfiguration;
         private System.Windows.Forms.Button downloadConfiguration;
         private System.Windows.Forms.Button firmwareUpdate;
@@ -326,13 +352,17 @@
         private System.Windows.Forms.Button stopMotors;
         private System.Windows.Forms.NumericUpDown targetSelector;
         private System.Windows.Forms.Label targetSelectorLabel;
-        private System.Windows.Forms.Button startStreamButton;
-        private System.Windows.Forms.Button stopStreamButton;
         public System.Windows.Forms.DataGridView statusDataGrid;
         private System.Windows.Forms.Timer statusUpdateTimer;
         private System.Windows.Forms.CheckBox pwEnabledBox;
         private System.Windows.Forms.Timer printTimer;
         private System.Windows.Forms.PictureBox closeButton;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button clearErrors;
+        private System.Windows.Forms.Button stopStreamButton;
+        private System.Windows.Forms.Button startStreamButton;
+        private System.Windows.Forms.Button status;
+        private System.Windows.Forms.Panel sidePanel;
     }
 }

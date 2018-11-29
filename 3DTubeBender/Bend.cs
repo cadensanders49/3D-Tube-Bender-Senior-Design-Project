@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
+using _3DTubeBender.Properties;
+using Pololu.Jrk;
+using Pololu.Usc;
 
 namespace _3DTubeBender
 {
@@ -9,31 +12,42 @@ namespace _3DTubeBender
         public Bend()
         {
             InitializeComponent();
-        }
-
-        //
-        //      START BUTTON
-        //
-
-        // Object: Start Button
-        // Action: Click
-        private void start_Click(object sender, EventArgs e)
-        {
-            Program.startMotors();
-            Program.usc.setScriptDone(0);
+            statusUpdateTimer.Start();
         }
 
 
         //
-        //      STOP BUTTON
+        //      STATUS UPDATE TIMER
         //
 
-        // Object: Stop Button
-        // Action: Click
-        private void stop_Click(object sender, EventArgs e)
+        // Object: Status Update Timer
+        // Action: This function is called for every tick of the timer
+        // while the timer is enabled.
+        private void statusUpdateTimer_Tick(object sender, EventArgs e)
         {
-            Program.stopMotors();
-            Program.usc.setScriptDone(1);
+            Program.updateTable(statusDataGrid);
+        }
+
+
+        //
+        //      EMERGENCY STOP BUTTON
+        //
+
+        // Object: Emergency Stop Button
+        // Action: Mouse Enters
+        private void emergencyStopButton_MouseEnter(object sender, EventArgs e)
+        {
+            emergencyStopButton.Image = Resources.Emergency_Stop___Clicked;
+        }
+
+        private void emergencyStopButton_MouseLeave(object sender, EventArgs e)
+        {
+            emergencyStopButton.Image = Resources.Emergency_Stop;
+        }
+
+        private void emergencyStopButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
