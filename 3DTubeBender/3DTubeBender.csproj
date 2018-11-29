@@ -203,7 +203,7 @@
     <None Include="Resources\Settings - Unhighlighted.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Info.png" />
+    <None Include="Resources\Settings - Highlighted.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Info - Clicked.png" />
@@ -212,7 +212,7 @@
     <None Include="Resources\Info - Highlighted.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Settings - Highlighted.png" />
+    <None Include="Resources\Info.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

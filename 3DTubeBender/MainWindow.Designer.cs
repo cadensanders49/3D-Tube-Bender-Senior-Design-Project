@@ -33,7 +33,7 @@
             this.closeButton = new System.Windows.Forms.PictureBox();
             this.info = new System.Windows.Forms.PictureBox();
             this.settings = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.sidePanel = new System.Windows.Forms.Panel();
             this.usbCheck = new System.Windows.Forms.CheckBox();
             this.harmReductionCheck = new System.Windows.Forms.CheckBox();
             this.obstructionCheck = new System.Windows.Forms.CheckBox();
@@ -45,7 +45,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.closeButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.info)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.settings)).BeginInit();
-            this.panel2.SuspendLayout();
+            this.sidePanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolbar
@@ -106,17 +106,17 @@
             this.settings.MouseLeave += new System.EventHandler(this.settings_MouseLeave);
             this.settings.MouseUp += new System.Windows.Forms.MouseEventHandler(this.settings_MouseUp);
             // 
-            // panel2
+            // sidePanel
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(179)))), ((int)(((byte)(218)))));
-            this.panel2.Controls.Add(this.usbCheck);
-            this.panel2.Controls.Add(this.harmReductionCheck);
-            this.panel2.Controls.Add(this.obstructionCheck);
-            this.panel2.Controls.Add(this.powerCheck);
-            this.panel2.Location = new System.Drawing.Point(1, 30);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(240, 470);
-            this.panel2.TabIndex = 9;
+            this.sidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(179)))), ((int)(((byte)(218)))));
+            this.sidePanel.Controls.Add(this.usbCheck);
+            this.sidePanel.Controls.Add(this.harmReductionCheck);
+            this.sidePanel.Controls.Add(this.obstructionCheck);
+            this.sidePanel.Controls.Add(this.powerCheck);
+            this.sidePanel.Location = new System.Drawing.Point(1, 30);
+            this.sidePanel.Name = "sidePanel";
+            this.sidePanel.Size = new System.Drawing.Size(240, 470);
+            this.sidePanel.TabIndex = 9;
             // 
             // usbCheck
             // 
@@ -210,12 +210,12 @@
             this.BackgroundImage = global::_3DTubeBender.Properties.Resources.New_Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(801, 501);
-            this.Controls.Add(this.progressBar1);
-            this.Controls.Add(this.loadButton);
             this.Controls.Add(this.info);
             this.Controls.Add(this.settings);
+            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.loadButton);
             this.Controls.Add(this.messageBoard);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.sidePanel);
             this.Controls.Add(this.toolbar);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -230,8 +230,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.closeButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.info)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.settings)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.sidePanel.ResumeLayout(false);
+            this.sidePanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -241,7 +241,7 @@
         private System.Windows.Forms.PictureBox settings;
         private System.Windows.Forms.PictureBox info;
         private System.Windows.Forms.Panel toolbar;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel sidePanel;
         private System.Windows.Forms.CheckBox powerCheck;
         private System.Windows.Forms.Label messageBoard;
         private System.Windows.Forms.CheckBox harmReductionCheck;

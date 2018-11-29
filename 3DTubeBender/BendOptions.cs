@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _3DTubeBender.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -141,5 +142,7 @@ namespace _3DTubeBender
                 startBend.Enabled = false;
             }
         }
+
+        
     }
 }

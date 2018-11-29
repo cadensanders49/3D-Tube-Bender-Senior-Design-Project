@@ -11,7 +11,7 @@ namespace _3DTubeBender
         {
             InitializeComponent();
         }
-        
+
 
         //
         //      CLOSE BUTTON
@@ -246,8 +246,9 @@ namespace _3DTubeBender
             if (bendWindow.ShowDialog() == DialogResult.OK)
             {
                 //This is where you can do things until the Done button is pressed.
-                
+
             }
         }
     }
+
 }

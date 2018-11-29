@@ -33,11 +33,12 @@
             this.doneButton = new System.Windows.Forms.Button();
             this.toolbar = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.harmReductionCheck = new System.Windows.Forms.CheckBox();
+            this.obstructionCheck = new System.Windows.Forms.CheckBox();
+            this.loadCheck = new System.Windows.Forms.CheckBox();
             this.startBend = new System.Windows.Forms.Button();
             this.messageBoard = new System.Windows.Forms.Label();
-            this.loadCheck = new System.Windows.Forms.CheckBox();
-            this.obstructionCheck = new System.Windows.Forms.CheckBox();
-            this.harmReductionCheck = new System.Windows.Forms.CheckBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,6 +87,42 @@
             this.panel2.Size = new System.Drawing.Size(240, 470);
             this.panel2.TabIndex = 10;
             // 
+            // harmReductionCheck
+            // 
+            this.harmReductionCheck.AutoSize = true;
+            this.harmReductionCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.harmReductionCheck.Location = new System.Drawing.Point(12, 217);
+            this.harmReductionCheck.Name = "harmReductionCheck";
+            this.harmReductionCheck.Size = new System.Drawing.Size(217, 36);
+            this.harmReductionCheck.TabIndex = 3;
+            this.harmReductionCheck.Text = " All persons are a safe distance \r\n from any moving parts.";
+            this.harmReductionCheck.UseVisualStyleBackColor = true;
+            this.harmReductionCheck.CheckedChanged += new System.EventHandler(this.harmReductionCheck_CheckedChanged);
+            // 
+            // obstructionCheck
+            // 
+            this.obstructionCheck.AutoSize = true;
+            this.obstructionCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.obstructionCheck.Location = new System.Drawing.Point(11, 119);
+            this.obstructionCheck.Name = "obstructionCheck";
+            this.obstructionCheck.Size = new System.Drawing.Size(204, 36);
+            this.obstructionCheck.TabIndex = 2;
+            this.obstructionCheck.Text = " All obstructions have been \r\n cleared from the tube bender.";
+            this.obstructionCheck.UseVisualStyleBackColor = true;
+            this.obstructionCheck.CheckedChanged += new System.EventHandler(this.obstructionCheck_CheckedChanged);
+            // 
+            // loadCheck
+            // 
+            this.loadCheck.AutoSize = true;
+            this.loadCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loadCheck.Location = new System.Drawing.Point(11, 25);
+            this.loadCheck.Name = "loadCheck";
+            this.loadCheck.Size = new System.Drawing.Size(195, 36);
+            this.loadCheck.TabIndex = 0;
+            this.loadCheck.Text = "The tube is loaded properly \r\ninto the system.";
+            this.loadCheck.UseVisualStyleBackColor = true;
+            this.loadCheck.CheckedChanged += new System.EventHandler(this.loadCheck_CheckedChanged);
+            // 
             // startBend
             // 
             this.startBend.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(213)))), ((int)(((byte)(239)))));
@@ -95,7 +132,7 @@
             this.startBend.FlatAppearance.BorderSize = 2;
             this.startBend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.startBend.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.startBend.Location = new System.Drawing.Point(523, 404);
+            this.startBend.Location = new System.Drawing.Point(442, 404);
             this.startBend.Name = "startBend";
             this.startBend.Size = new System.Drawing.Size(124, 44);
             this.startBend.TabIndex = 13;
@@ -115,41 +152,16 @@
     "king the boxes on the left. Once finished, click the button below to start bendi" +
     "ng the tube.";
             // 
-            // loadCheck
+            // radioButton1
             // 
-            this.loadCheck.AutoSize = true;
-            this.loadCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loadCheck.Location = new System.Drawing.Point(11, 25);
-            this.loadCheck.Name = "loadCheck";
-            this.loadCheck.Size = new System.Drawing.Size(195, 36);
-            this.loadCheck.TabIndex = 0;
-            this.loadCheck.Text = "The tube is loaded properly \r\ninto the system.";
-            this.loadCheck.UseVisualStyleBackColor = true;
-            this.loadCheck.CheckedChanged += new System.EventHandler(this.loadCheck_CheckedChanged);
-            // 
-            // obstructionCheck
-            // 
-            this.obstructionCheck.AutoSize = true;
-            this.obstructionCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.obstructionCheck.Location = new System.Drawing.Point(11, 119);
-            this.obstructionCheck.Name = "obstructionCheck";
-            this.obstructionCheck.Size = new System.Drawing.Size(204, 36);
-            this.obstructionCheck.TabIndex = 2;
-            this.obstructionCheck.Text = " All obstructions have been \r\n cleared from the tube bender.";
-            this.obstructionCheck.UseVisualStyleBackColor = true;
-            this.obstructionCheck.CheckedChanged += new System.EventHandler(this.obstructionCheck_CheckedChanged);
-            // 
-            // harmReductionCheck
-            // 
-            this.harmReductionCheck.AutoSize = true;
-            this.harmReductionCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.harmReductionCheck.Location = new System.Drawing.Point(12, 217);
-            this.harmReductionCheck.Name = "harmReductionCheck";
-            this.harmReductionCheck.Size = new System.Drawing.Size(217, 36);
-            this.harmReductionCheck.TabIndex = 3;
-            this.harmReductionCheck.Text = " All persons are a safe distance \r\n from any moving parts.";
-            this.harmReductionCheck.UseVisualStyleBackColor = true;
-            this.harmReductionCheck.CheckedChanged += new System.EventHandler(this.harmReductionCheck_CheckedChanged);
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(325, 189);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(85, 17);
+            this.radioButton1.TabIndex = 15;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "radioButton1";
+            this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // BendOptions
             // 
@@ -158,6 +170,7 @@
             this.BackgroundImage = global::_3DTubeBender.Properties.Resources.New_Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(801, 501);
+            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.messageBoard);
             this.Controls.Add(this.startBend);
             this.Controls.Add(this.panel2);
@@ -174,6 +187,7 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -188,5 +202,6 @@
         private System.Windows.Forms.CheckBox loadCheck;
         private System.Windows.Forms.CheckBox obstructionCheck;
         private System.Windows.Forms.CheckBox harmReductionCheck;
+        private System.Windows.Forms.RadioButton radioButton1;
     }
 }
