@@ -15,13 +15,11 @@ Our goal was to create a user-friendly system through intuitive UI controls with
 Some examples of the hardware and the configurations used can be seen in the photos below.
 
 ## Hardware
-#### Controller
-![alt text](
+### Controller
 <img src="https://github.com/cadensanders49/3D-Tube-Bender/blob/master/Graphics/ReadMeImages/Maestro.jpg" width="300" height="300" class="aligncenter">
 
-#### Motor
+### Motor
 <img src="https://github.com/cadensanders49/3D-Tube-Bender/blob/master/Graphics/ReadMeImages/Large%20Servo%20Motor.png" width="400" height="350" class="aligncenter">
 
 ### Functional Diagram
-![alt text]()
-<img src="https://github.com/cadensanders49/3D-Tube-Bender/blob/master/Graphics/ReadMeImages/Motor%20with%20Feedback%20v2.png" width="700" height="500" class="aligncenter">
+<img src="https://github.com/cadensanders49/3D-Tube-Bender/blob/master/Graphics/ReadMeImages/Motor%20with%20Feedback%20v2.png" width="800" height="600" class="aligncenter">
