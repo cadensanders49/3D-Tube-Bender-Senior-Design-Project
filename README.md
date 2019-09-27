@@ -16,10 +16,12 @@ Some examples of the hardware and the configurations used can be seen in the pho
 
 ## Hardware
 #### Controller
-![alt text](https://github.com/cadensanders49/3D-Tube-Bender/blob/master/Graphics/ReadMeImages/Maestro.jpg)
+![alt text](
+<img src="https://github.com/cadensanders49/3D-Tube-Bender/blob/master/Graphics/ReadMeImages/Maestro.jpg" width="400" height="400" class="aligncenter">
 
 #### Motor
-<img src="https://github.com/cadensanders49/3D-Tube-Bender/blob/master/Graphics/ReadMeImages/Large%20Servo%20Motor.png" width="500" height="500" class="center">
+<img src="https://github.com/cadensanders49/3D-Tube-Bender/blob/master/Graphics/ReadMeImages/Large%20Servo%20Motor.png" width="400" height="350" class="aligncenter">
 
 ### Functional Diagram
-![alt text](https://github.com/cadensanders49/3D-Tube-Bender/blob/master/Graphics/ReadMeImages/Motor%20with%20Feedback%20v2.png)
+![alt text]()
+<img src="https://github.com/cadensanders49/3D-Tube-Bender/blob/master/Graphics/ReadMeImages/Motor%20with%20Feedback%20v2.png" width="500" height="500" class="aligncenter">
